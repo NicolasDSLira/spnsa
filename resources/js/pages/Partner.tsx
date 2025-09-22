@@ -16,7 +16,7 @@ export default function Partner() {
     return (
         <>
             <AppLayout breadcrumbs={breadcrumbs}>
-                <section className="flex flex-col items-center justify-center gap-6 bg-amber-400 bg-[url(assets/imagem/bg/bg-parceria.webp)] bg-cover bg-fixed bg-top p-10 text-gray-900 md:min-h-screen md:py-20">
+                <section className="bg-[url('/assets/imagem/bg/bg-parceria.webp')]  flex flex-col items-center justify-center gap-6 bg-amber-400 bg-cover bg-fixed bg-top p-10 text-gray-900 md:min-h-screen md:py-20">
                     <div
                         className="w-full space-y-6 rounded-2xl border-4 border-gray-900 bg-amber-400/10 p-10 text-justify shadow-2xl backdrop-blur-xs md:w-2/3"
                         data-aos="fade-right"
@@ -56,11 +56,11 @@ export default function Partner() {
                                 operacional, conforme Lei 9249 – inciso III do § 2° do artigo 13.
                             </p>
                         </div>
-                        <div className="cursor-zoom-in bg-[url(assets/imagem/parceria-01.webp)] bg-cover bg-top transition-transform duration-300 ease-in-out hover:scale-105"></div>
+                        <div className="cursor-zoom-in bg-[url(/assets/imagem/parceria-01.webp)] bg-cover bg-top transition-transform duration-300 ease-in-out hover:scale-105"></div>
                     </div>
 
                     <div className="w-full max-w-6xl gap-10 md:grid md:grid-cols-3">
-                        <div className="cursor-zoom-in bg-[url(assets/imagem/parceria-02.webp)] bg-cover bg-top transition-transform duration-300 ease-in-out hover:scale-105"></div>
+                        <div className="cursor-zoom-in bg-[url(/assets/imagem/parceria-02.webp)] bg-cover bg-top transition-transform duration-300 ease-in-out hover:scale-105"></div>
                         <div className="col-span-2 cursor-zoom-in space-y-4 border-2 border-red-900 bg-gray-100 p-4 tracking-wide transition-transform duration-300 ease-in-out hover:scale-105 md:p-10 md:text-justify md:indent-2">
                             <h3 className="text-2xl font-bold text-red-900">Mudança na forma como o consumidor vê o estabelecimento</h3>
                             <p>
@@ -102,11 +102,11 @@ export default function Partner() {
                                 sentem mais confortáveis quando fazem uma compra que, de certa forma, irá contribuir para a melhora na vida de alguém.
                             </p>
                         </div>
-                        <div className="cursor-zoom-in bg-[url(assets/imagem/parceria-03.webp)] bg-cover bg-top transition-transform duration-300 ease-in-out hover:scale-105"></div>
+                        <div className="cursor-zoom-in bg-[url(/assets/imagem/parceria-03.webp)] bg-cover bg-top transition-transform duration-300 ease-in-out hover:scale-105"></div>
                     </div>
 
                     <div className="w-full max-w-6xl gap-10 md:grid md:grid-cols-3">
-                        <div className="cursor-zoom-in bg-[url(assets/imagem/parceria-04.webp)] bg-cover bg-top transition-transform duration-300 ease-in-out hover:scale-105"></div>
+                        <div className="cursor-zoom-in bg-[url(/assets/imagem/parceria-04.webp)] bg-cover bg-top transition-transform duration-300 ease-in-out hover:scale-105"></div>
                         <div className="col-span-2 cursor-zoom-in space-y-4 border-2 border-red-900 bg-gray-100 p-4 tracking-wide transition-transform duration-300 ease-in-out hover:scale-105 md:p-10 md:text-justify md:indent-2">
                             <h3 className="text-2xl font-bold text-red-900">O governo oferece incentivos fiscais</h3>
                             <p>

@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ChangeEventHandler, ReactNode } from "react";
 import clsx from "clsx";
 
 
@@ -6,13 +6,18 @@ interface InputProps {
     type: string;
     className?: string;
     placeholder?: string;
-    name: string; // melhor que "alt"
+    name: string;
+    required?: boolean;
+    autoComplete?: string;
+    onChange: ChangeEventHandler<HTMLInputElement>;
 }
 
 interface TextProps {
     className?: string;
     placeholder?: string;
     name: string; // melhor que "alt"
+    required?: boolean;
+    onChange: ChangeEventHandler<HTMLTextAreaElement>;
 }
 
 interface LabelProps {
@@ -21,25 +26,17 @@ interface LabelProps {
     text: string;
 }
 
-interface FormInputProps {
-    type: string;
-    placeholder?: string;
-    name: string;
+interface FormInputProps extends InputProps {
     label: string;
-    className?: string;
     children?: ReactNode;
 }
 
-interface FormTextProps {
-    placeholder?: string;
-    name: string;
+interface FormTextProps extends TextProps {
     label: string;
-    className?: string;
     children?: ReactNode;
 }
 
-
-export function Input({ type, className, placeholder, name }: InputProps) {
+export function Input({ type, className, placeholder, name, required = true, autoComplete, onChange}: InputProps) {
     return (
         <input
             type={type}
@@ -47,13 +44,14 @@ export function Input({ type, className, placeholder, name }: InputProps) {
             name={name}
             id={name}
             className={clsx(className, "border rounded px-4 py-2")}
-            autoComplete={type}
-            required
+            autoComplete={autoComplete}
+            required={required}
+            onChange={onChange}
         />
     );
 }
 
-export function TextArea({ className, placeholder, name }: TextProps) {
+export function TextArea({ className, placeholder, name, required = true, onChange }: TextProps) {
     return (
         <textarea
             placeholder={placeholder}
@@ -61,13 +59,15 @@ export function TextArea({ className, placeholder, name }: TextProps) {
             id={name}
             className={clsx(className, "border rounded px-4 py-2")}
             rows={4}
+            required={required}
+            onChange={onChange}
         />
     );
 }
 
 export function Label({ htmlFor, text, className }: LabelProps) {
     return (
-        <label htmlFor={htmlFor} className={className}>
+        <label htmlFor={htmlFor} className={clsx(className, "font-medium")}>
             {text}
         </label>
     );
@@ -79,12 +79,15 @@ function FormInput({
     name,
     label,
     className,
+    required,
+    autoComplete,
+    onChange,
     children,
 }: FormInputProps) {
     return (
         <div className="flex flex-col gap-2">
             <Label htmlFor={name} text={label} />
-            <Input type={type} placeholder={placeholder} name={name} className={className}/>
+            <Input type={type} placeholder={placeholder} name={name} className={className} required={required} autoComplete={autoComplete} onChange={onChange}/>
             {children}
         </div>
     );
@@ -96,12 +99,14 @@ function FormText({
     name,
     label,
     className,
+    required, 
+    onChange,
     children,
 }: FormTextProps) {
     return (
         <div className="flex flex-col gap-2">
             <Label htmlFor={name} text={label} />
-            <TextArea placeholder={placeholder} name={name} className={className} />
+            <TextArea placeholder={placeholder} name={name} className={className} required={required} onChange={onChange}/>
             {children}
         </div>
     );

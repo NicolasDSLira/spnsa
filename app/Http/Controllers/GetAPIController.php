@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\File;
+use Mail;
+use Illuminate\Http\Request;
 
 class GetAPIController extends Controller
 {
@@ -58,5 +60,32 @@ class GetAPIController extends Controller
         ];
 
         return response()->json($data);
+    }
+
+    public function send(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'phone' => 'nullable|string|max:20',
+            'message' => 'required|string',
+        ]);
+
+        $data = [
+            'name'      => $request->name,
+            'body'      => $request->message,
+            'email'     => $request->email,
+            'phone'     => $request->phone,
+            'data'      => now()->format('d/m/Y H:i:s'),
+        ];
+
+        Mail::send('utilitarios.email', $data, function ($message) use ($request) {
+            $message->to('contato@spnsa.org.br', 'Contato Web - ' . $request->name)
+                ->subject('Formulário de Contato')
+                ->from('contato@spnsa.org.br', $request->name);
+        });
+
+        return redirect()->back()->with('success', true)->with('message', 'Mensagem enviada com sucesso!');
+
     }
 }

@@ -45,7 +45,7 @@ export default function Transparency() {
     return (
         <>
             <AppLayout breadcrumbs={breadcrumbs}>
-                <div className="bg-amber-400 bg-[url('assets/imagem/bg/figuras.webp')] bg-cover bg-center">
+                <div className="bg-[url('/assets/imagem/bg/figuras.webp')] bg-amber-400 bg-cover bg-center">
                     <aside className="flex items-center justify-center p-10">
                         <h1 className="bg-gray-50/80 p-10 text-4xl font-black shadow-2xl backdrop-blur">Prestação de contas</h1>
                     </aside>

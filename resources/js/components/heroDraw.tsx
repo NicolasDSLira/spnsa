@@ -85,7 +85,7 @@ function MotionPath({ ...props }) {
                             key={idx}
                         >
                             <CardHeader>
-                                <img src={item.icon} className="w-3/4" />
+                                <img src={item.icon} className="w-3/4" alt={item.title}/>
                                 <CardTitle>{item.title}</CardTitle>
                             </CardHeader>
                             <CardContent className="px-4 md:px-2">

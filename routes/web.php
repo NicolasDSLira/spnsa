@@ -7,6 +7,10 @@ use App\Http\Controllers\GetAPIController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
+});
+
+Route::get('/home', function () {
+    return Inertia::render('Welcome');
 })->name('home');
 
 Route::get('/about', function(){
@@ -56,6 +60,8 @@ Route::get('contact', function(){
 
 //     return response()->json($fileNames);
 // });
+
+Route::post('contato/send', [GetAPIController::class,'send'])->name('api.contato');
 
 Route::get('api/galeria', [GetAPIController::class, 'galeria'])->name('api.galeria');
 Route::get('api/parceiros', [GetAPIController::class, 'parceiros'])->name('api.parceiros');

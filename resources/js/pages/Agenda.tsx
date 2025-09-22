@@ -70,7 +70,7 @@ export default function Agenda() {
     return (
         <>
             <AppLayout breadcrumbs={breadcrumbs}>
-                <div className="justify-centers flex flex-col items-center bg-amber-400 bg-[url('assets/imagem/bg/figuras.webp')] bg-cover bg-fixed bg-center p-10">
+                <div className="justify-centers flex flex-col items-center bg-amber-400 bg-[url('/assets/imagem/bg/figuras.webp')] bg-cover bg-fixed bg-center p-10">
                     <section className="w-[90dvw] rounded-t-xl border-x-2 border-t-2 border-red-900 bg-gray-50 p-10 md:w-4/5">
                         <h1 className="text-2xl font-bold">Fique por dentro de nossos eventos</h1>
                     </section>

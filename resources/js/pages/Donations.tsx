@@ -41,7 +41,7 @@ export default function Donations() {
         <>
             <Head title="Doações" />
             <AppLayout breadcrumbs={breadcrumbs}>
-                <div className="flex flex-col items-center justify-center gap-6 bg-amber-400 bg-[url('assets/imagem/bg/figuras.webp')] bg-contain bg-repeat p-10 py-20 text-gray-900">
+                <div className="bg-[url('/assets/imagem/bg/figuras.webp')] flex flex-col items-center justify-center gap-6 bg-amber-400 bg-contain bg-repeat p-10 py-20 text-gray-900">
                     <h1 className="text-4xl font-bold text-red-800 underline decoration-red-800 decoration-4">Faça sua doação</h1>
                     <p>Ajude a transformar a vida de nossas crianças.</p>
 

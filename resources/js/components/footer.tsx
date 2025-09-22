@@ -4,12 +4,12 @@ const data = {
     email: 'contato@spnsa.org.br',
     phone: '1146767122',
     social: {
-        tiktok: '',
-        insta: '',
-        face: '',
-        whats: '',
+        tiktok: 'https://spnsa.org.br',
+        insta: 'https://www.instagram.com/servipromocional',
+        face: 'https://www.facebook.com/servproaparecida',
+        whats: 'https://wa.me/551146767122',
     },
-    creator: '',
+    creator: 'L4Soft',
 };
 
 export default function () {
@@ -46,17 +46,17 @@ export default function () {
             </div>
             {/** row 3 */}
             <div className="flex w-1/3 gap-6">
-                <a href={data.social.tiktok}>
+                <a href={data.social.tiktok} aria-label="Tik Tok">
                     <img src="/assets/icons/tiktok.svg" alt="Tik Tok" />
                 </a>
-                <a href={data.social.insta}>
+                <a href={data.social.insta} aria-label="Instagram">
                     <img src="/assets/icons/instagram.svg" alt="Instagram" />
                 </a>
-                <a href={data.social.face}>
+                <a href={data.social.face} aria-label="Facebook">
                     <img src="assets/icons/facebook.svg" alt="Facebook" />
                 </a>
-                <a href={data.social.whats}>
-                    <img src="/assets/icons/whatsapp.svg" alt="" />
+                <a href={data.social.whats} aria-label="WhatsApp">
+                    <img src="/assets/icons/whatsapp.svg" alt="WhatsApp" />
                 </a>
             </div>
         </div>

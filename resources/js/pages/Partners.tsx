@@ -31,7 +31,7 @@ export default function Partners() {
         <>
             <AppLayout breadcrumbs={breadcrumbs}>
                 <aside
-                    className="flex min-h-[50dvh] items-center justify-center bg-[url('assets/imagem/bg/bg-parceiros.webp')] bg-cover bg-scroll bg-center bg-no-repeat md:min-h-screen md:bg-cover"
+                    className="flex min-h-[50dvh] items-center justify-center bg-[url('/assets/imagem/bg/bg-parceiros.webp')] bg-cover bg-scroll bg-center bg-no-repeat md:min-h-screen md:bg-cover"
                     data-aos="fade-up"
                 >
                     <div className="w-fit rounded bg-gray-100/50 px-4 py-10 shadow-2xl backdrop-blur md:w-2/4 md:p-10">
