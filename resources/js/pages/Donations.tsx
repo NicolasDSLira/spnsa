@@ -31,9 +31,9 @@ export default function Donations() {
                 document.execCommand('copy');
                 document.body.removeChild(textArea);
             }
-            alert('CNPJ copiado para a área de transferência!');
+            alert('Chave pix copiado para a área de transferência!');
         } catch (err) {
-            console.error('Erro ao copiar o CNPJ: ', err);
+            console.error('Erro ao copiar chave pix: ', err);
         }
     };
 

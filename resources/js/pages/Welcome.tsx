@@ -63,7 +63,7 @@ export default function Welcome() {
                             </ol>
                         </div>
                         <div className="py-8">
-                            <a href="link" className="bg-amber-400 p-4 font-black">
+                            <a href="https://wa.me/551146767122" className="bg-amber-400 p-4 font-black">
                                 Participe e apoie nossa causa!
                             </a>
                         </div>
