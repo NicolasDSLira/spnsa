@@ -20,11 +20,11 @@ export default function AppLayout({ children, breadcrumbs, ...props }: AppLayout
     }, []);
 
     return (
-        <div className="relative min-h-screen scroll-smooth bg-gray-100 text-gray-900" {...props}>
+        <div className="relative scroll-smooth min-h-dvh bg-gray-100 text-gray-900 flex flex-col" {...props}>
             {/* Ajuste: pega o título do primeiro breadcrumb se existir */}
             <Head title={breadcrumbs && breadcrumbs.length > 0 ? breadcrumbs[0].title : 'Página'} />
             <Navbar />
-            <main>{children}</main>
+            <main className='flex-1'>{children}</main>
             <Footer />
         </div>
     );

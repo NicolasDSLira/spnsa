@@ -42,18 +42,21 @@ export default function Donations() {
             <Head title="Doações" />
             <AppLayout breadcrumbs={breadcrumbs}>
                 <div className="bg-[url('/assets/imagem/bg/figuras.webp')] flex flex-col items-center justify-center gap-6 bg-amber-400 bg-contain bg-repeat p-10 py-20 text-gray-900">
-                    <h1 className="text-4xl font-bold text-red-800 underline decoration-red-800 decoration-4">Faça sua doação</h1>
-                    <p>Ajude a transformar a vida de nossas crianças.</p>
 
-                    <div className="bg-gray-50">
-                        <img src="/assets/imagem/bancos/pix.png" alt="Chave pix - QRcode" width={250} />
+                    <div className='bg-gray-50 flex w-full max-w-3xl flex-col items-center justify-center gap-6 rounded-lg p-10 shadow-lg border-4 border-blue-500'>
+                        <h1 className="text-4xl font-bold text-red-800 underline decoration-red-800 decoration-4">Faça sua doação</h1>
+                        <p>Ajude a transformar a vida de nossas crianças.</p>
+
+                        <div className="bg-gray-50">
+                            <img src="/assets/imagem/bancos/pix.png" alt="Chave pix - QRcode" width={250} />
+                        </div>
+                        <button
+                            className="group flex cursor-pointer flex-col items-center justify-center gap-10 bg-amber-500 px-10 py-4 font-bold transition-all duration-400 hover:scale-105 md:flex-row"
+                            onClick={copyCnpj}
+                        >
+                            Copiar chave pix
+                        </button>
                     </div>
-                    <button
-                        className="group flex cursor-pointer flex-col items-center justify-center gap-10 bg-gray-50 px-10 py-4 font-bold transition-all duration-400 hover:scale-105 md:flex-row"
-                        onClick={copyCnpj}
-                    >
-                        Copiar chave pix
-                    </button>
                 </div>
             </AppLayout>
         </>

@@ -56,7 +56,7 @@ export default function Contact() {
 
         <AppLayout breadcrumbs={breadcrumbs}>
             <div className="space-y-6 px-10 py-20 bg-[url('/assets/imagem/bg/figuras.webp')] bg-cover bg-amber-400">
-                <div className='bg-gray-50/80 backdrop-blur-3xl p-10 w-4/5 mx-auto'>
+                <div className='bg-gray-50/95 backdrop-blur-3xl p-10 w-4/5 mx-auto rounded-2xl shadow-lg'>
                     <h1 className="text-center text-4xl font-bold">Nós Envie uma mensagem</h1>
                     <form onSubmit={submit} className="mx-auto gap-10 space-y-6 md:grid md:grid-cols-2">
                         <FormInput type="text" name="name" placeholder="Nome Completo" label="Nome" required autoComplete='nome' onChange={e => setData('name', e.target.value)} />

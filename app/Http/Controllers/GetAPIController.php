@@ -42,20 +42,19 @@ class GetAPIController extends Controller
     {
         $data = [
             [
-                'title' => 'SERVIÇO PROMOCIONAL NOSSA SENHORA APARECIDA',
-                'CNPJ' => '58.477.555/0001-09',
-                'unidade'=> ' CEI PASTORINHAS I',
-                'numero'=> 61,
-                'tipo'=> 'Termo de Colaboração',
+                'title' => 'Termo Aditivo CEI Pastorinhas',
+                'CNPJ' => '58.477.555/0001-51',
+                'unidade'=> ' CEI PASTORINHAS',
+                'numero'=> 6,
+                'tipo'=> 'Termo Aditivo',
                 'processo'=> 304,
-                'objetivo' => 'Atendimento gratuito em Creche, visando ao desenvolvimento sócioeducativo das crianças residentes no Município de Ferraz de Vasconcelos.',
-                'valorTotal' => '859.855,12',
-                'dataAssinatura' => '15/02/2017',
-                'dataInicio'=> '02/02/2017',
-                'dataFim'=> ' 31/12/2017',
-                'termoColaboracao'=> 'Termo de Colaboração',
-                'planoTrabalho'=> 'Plano de Trabalho',
-                'termoAditivo'=> 'Termo Aditivo',
+                'objetivo' => 'Atendimento educacional na modalidade educação infantil.',
+                'valorTotal' => '1.277.997,83',
+                'dataAssinatura' => '22/05/2025',
+                'dataInicio'=> '02/01/2025',
+                'dataFim'=> ' 31/12/2025',
+                'termoColaboracao'=> 'n° 04/2021',
+                'termoAditivo'=> '6° Termo Aditivo CEI Pastorinhas',
             ],
         ];
 

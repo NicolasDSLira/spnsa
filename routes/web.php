@@ -29,23 +29,28 @@ Route::get('/invoices', function(){
     return Inertia::render('Invoices');
 })->name('invoices');
 
-Route::get('partner', function(){
+Route::get('/partner', function(){
     return Inertia::render('Partner');
 })->name('partner');
 
-Route::get('partners', function(){
+Route::get('/partners', function(){
     return Inertia::render('Partners');
 })->name('partners');
 
-Route::get('transparency', function(){
+Route::get('/transparency', function(){
     return Inertia::render('Transparency');
 })->name('transparency');
 
-Route::get('agenda', function(){
+Route::get('/agenda', function(){
     return Inertia::render('Agenda');
 })->name('agenda');
 
-Route::get('contact', function(){
+Route::get('/Unidades', function(){
+    return Inertia::render('Unidade');
+})->name('unidades');
+
+
+Route::get('/contact', function(){
     return Inertia::render('Contact');
 })->name('contact');
 
@@ -63,6 +68,6 @@ Route::get('contact', function(){
 
 Route::post('contato/send', [GetAPIController::class,'send'])->name('api.contato');
 
-Route::get('api/galeria', [GetAPIController::class, 'galeria'])->name('api.galeria');
-Route::get('api/parceiros', [GetAPIController::class, 'parceiros'])->name('api.parceiros');
+Route::get('/api/galeria', [GetAPIController::class, 'galeria'])->name('api.galeria');
+Route::get('/api/parceiros', [GetAPIController::class, 'parceiros'])->name('api.parceiros');
 Route::get('/api/transparecy', [GetAPIController::class, 'transparecy'])->name('api.transparecy');

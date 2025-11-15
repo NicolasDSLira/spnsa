@@ -16,18 +16,18 @@ export default function () {
     // Log data for debugging
     console.log(data);
     return (
-        <div className="flex items-end justify-center gap-10 p-10">
+        <div className="flex items-center justify-center gap-10 p-4 bottom-0 bg-gray-50">
             {/** row 1 */}
             <div className="flex w-1/3 flex-col items-center gap-6 text-center">
                 <div>
-                    <img src="/assets/logo.png" alt="SPNSA" />
+                    <img src="/assets/logo.png" alt="SPNSA" width={50}/>
                 </div>
                 <div>
                     <p>{data.endereco}</p>
                 </div>
             </div>
             {/** row 2 */}
-            <div className="flex w-1/3 flex-col justify-between gap-6">
+            <div className="flex w-1/3 flex-col justify-between gap-4">
                 <div>
                     <p>
                         <span className="font-bold">CNPJ:</span> {data.cnpj}
@@ -47,16 +47,16 @@ export default function () {
             {/** row 3 */}
             <div className="flex w-1/3 gap-6">
                 <a href={data.social.tiktok} aria-label="Tik Tok">
-                    <img src="/assets/icons/tiktok.svg" alt="Tik Tok" />
+                    <img src="/assets/icons/tiktok.svg" alt="Tik Tok" width={25}/>
                 </a>
                 <a href={data.social.insta} aria-label="Instagram">
-                    <img src="/assets/icons/instagram.svg" alt="Instagram" />
+                    <img src="/assets/icons/instagram.svg" alt="Instagram"  width={25}/>
                 </a>
                 <a href={data.social.face} aria-label="Facebook">
-                    <img src="assets/icons/facebook.svg" alt="Facebook" />
+                    <img src="assets/icons/facebook.svg" alt="Facebook" width={25}/>
                 </a>
                 <a href={data.social.whats} aria-label="WhatsApp">
-                    <img src="/assets/icons/whatsapp.svg" alt="WhatsApp" />
+                    <img src="/assets/icons/whatsapp.svg" alt="WhatsApp" width={25}/>
                 </a>
             </div>
         </div>

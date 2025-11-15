@@ -64,7 +64,7 @@ export default function History() {
                                 O Serviço Promocional Nossa Senhora Aparecida, é uma entidade filantrópica, sem fins lucrativos, fundada em 05 de
                                 março de 1989, reconhecida como utilidade Pública Federal, Estadual e Municipal. Através da Congregação das Irmãs da
                                 Caridade de Ottawa um grupo de leigos da Pastoral Social compromissados com a causa fazia visitas nos lares e fornecia
-                                alimentos às famílias.
+                                alimentos às famílias.{' '}
                             </p>
                             <p>
                                 Reavaliando a situação o grupo concluiu que as mães não precisavam apenas de alimentos e sim de pessoas que ficassem
@@ -73,11 +73,11 @@ export default function History() {
                                 município à leste da Cidade de São Paulo.{' '}
                             </p>
                             <p>
-                                {' '}
                                 Os parceiros diversos da Sociedade Civil tiveram papel fundamental para o provimento do trabalho existente e sua
                                 extensão, inclusive construindo as novas instalações. Em 1999 no Jardim São João foi inaugurada a sede da CEI
                                 Pastorinhas I em parceria com a Fundação do Brasil. Atualmente atendemos no CEI Pastorinhas I um total de 216
                                 crianças.
+                                {' '}
                             </p>
                         </div>
                         <div
@@ -111,23 +111,21 @@ export default function History() {
                             data-aos-anchor-placement="top-bottom"
                         >
                             <p>
-                                O Serviço Promocional Nossa Senhora Aparecida, é uma entidade filantrópica, sem fins lucrativos, fundada em 05 de
-                                março de 1989, reconhecida como utilidade Pública Federal, Estadual e Municipal. Através da Congregação das Irmãs da
-                                Caridade de Ottawa um grupo de leigos da Pastoral Social compromissados com a causa fazia visitas nos lares e fornecia
-                                alimentos às famílias.
+                                Diante das desigualdades sociais e inexistência de políticas públicas, em 1995 foi realizada uma consulta no Jardim Angelina perguntando para as mães as necessidades da Comunidade.  O resultado foi a urgência de um trabalho que contemplasse as crianças no período inverso ao da Escola, para que elas não ficassem na rua.
                             </p>
                             <p>
-                                Reavaliando a situação o grupo concluiu que as mães não precisavam apenas de alimentos e sim de pessoas que ficassem
-                                com seus filhos para que pudessem trabalhar. Assim iniciou a Creche Comunitária das Pastorinhas com 10 crianças no
-                                Salão Paroquial da Igreja Nossa Senhora Aparecida no ano de 1988 na cidade de Ferraz de Vasconcelos, o primeiro
-                                município à leste da Cidade de São Paulo.{' '}
+                                Assim nasceu o Centro de Juventude no Angelina com 15 Crianças e Adolescentes e em 1996 o Centro de Juventude Santo Antonio, oferecendo atividades educativas nas áreas de: informática, música e artesanato; as atividades eram desenvolvidas por voluntários da Comunidade que tinham como meta buscar valores e formar cidadãos.
                             </p>
                             <p>
                                 {' '}
-                                Os parceiros diversos da Sociedade Civil tiveram papel fundamental para o provimento do trabalho existente e sua
-                                extensão, inclusive construindo as novas instalações. Em 1999 no Jardim São João foi inaugurada a sede da CEI
-                                Pastorinhas I em parceria com a Fundação do Brasil. Atualmente atendemos no CEI Pastorinhas I um total de 216
-                                crianças.
+                                Em 2007 iniciou o Centro de Juventude Margarida e, atualmente atendemos 435 Crianças e Adolescentes nos Centros de Juventudes, incluindo o Centro de Juventude São Luís Rei.
+                            </p>
+                            <p>
+                                Para que o trabalho tivesse um desenvolvimento de qualidade foi necessário ampliar a busca de parcerias, principalmente para qualificar e adequar às instalações físicas, isso se deu por intermédio do Padre Paulus, que buscou recursos em sua terra natal Holanda. Posteriormente foram celebradas parcerias com a Secretária Municipal de Promoção e Desenvolvimento Social e Secretaria Municipal da Educação.
+
+                            </p>
+                            <p>
+                                Em 2008 o Serviço Promocional Nossa Senhora Aparecida firmou parceria com a Fundação Abrinq, ampliando o número de crianças e, desde então, começou a fazer parte da rede Nossas Crianças.
                             </p>
                         </div>
                     </div>

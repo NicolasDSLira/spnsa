@@ -21,11 +21,32 @@ interface Eventos {
 
 const eventos: Eventos[] = [
     {
-        title: 'BINGO BENEFICENTE ASFAR',
-        description: 'Informamos que os convites para o Bingo Beneficente promovido pela ASFAR já estão disponíveis para venda.',
-        data: '04/10/2025',
-        horario: 'A partir das 14h30',
-        local: 'Salão do Rotary – Avenida Brasil, 121, Vila Corrêa – Ferraz de Vasconcelos',
+        title: 'Almoço de Natal do SPNSA 2025',
+        description: 'Grande Almoço de Natal do SPNSA para 500 crianças e adolescentes atendidos em nossas unidades.',
+        data: 'Doações até 12/12/2025',
+        horario: '',
+        local: '',
+    },
+    {
+        title: '3° Jantar Paróquia Santa Margarida e Serviço Promocional',
+        description: 'Vem aí o 3° Jantar da Paróquia Santa Margarida e Serviço Promocional! 🍽️✨',
+        data: '13/12/2025',
+        horario: 'A partir das 19hrs30',
+        local: 'CJ Margarida - Rua das Margaridas, 710 - Vila Santa Margarida, Ferraz de Vasconcelos',
+    },
+    {
+        title: 'Desfile Cívico',
+        description: 'Venha celebrar conosco o Desfile Cívico de 2025!',
+        data: '14/10/2025',
+        horario: 'A partir das 09h',
+        local: 'Avenida Brasil - Ferraz de Vasconcelos',
+    },
+    {
+        title: 'Missa de Ação de Graças',
+        description: 'Paróquia Nossa Senhora Aparecida Ferraz de Vasconcelos convida a todos para a Missa de Ação de Graça.',
+        data: '12/10/2025',
+        horario: 'A partir das 09h',
+        local: 'R. Tiradentes, 313 - Vila Andeyara, Ferraz de Vasconcelos',
     },
     {
         title: '23° Festa do Yakissoba',
@@ -54,7 +75,6 @@ const eventos: Eventos[] = [
         title: '24° Bienal do Livro',
         description: 'Visita a 24ª Bienal do Livro, com 80 crianças se adolescentes, visando abertura de novos horizontes.',
         data: '13/09/2024',
-        horario: '---',
         local: 'Av. Olavo Fontoura, 1209 - Santana - São Paulo, 02012-021',
     },
     {
@@ -86,16 +106,25 @@ export default function Agenda() {
                                             Data:<span className="px-2 font-normal">{evento.data}</span>
                                         </h2>
                                     </div>
-                                    <div className="flex w-full items-center justify-center px-2 md:w-fit">
-                                        <h2 className="font-bold text-nowrap">
-                                            Horário:<span className="px-2 font-normal">{evento.horario}</span>
-                                        </h2>
-                                    </div>
-                                    <div className="flex w-full items-center justify-center px-2 md:w-fit">
-                                        <h2 className="font-bold">
-                                            Local:<span className="px-2 font-normal">{evento.local}</span>
-                                        </h2>
-                                    </div>
+                                    {
+                                        evento.horario && (
+                                            <div className="flex w-full items-center justify-center px-2 md:w-fit">
+                                                <h2 className="font-bold text-nowrap">
+                                                    Horário:<span className="px-2 font-normal">{evento.horario}</span>
+                                                </h2>
+                                            </div>
+                                        )
+                                    }
+                                    {
+                                        evento.local && (
+                                            <div className="flex w-full items-center justify-center px-2 md:w-fit">
+                                                <h2 className="font-bold">
+                                                    Local:<span className="px-2 font-normal">{evento.local}</span>
+                                                </h2>
+                                            </div>
+                                        )
+                                    }
+
                                 </div>
                                 <div>{evento.description && <p>{evento.description}</p>}</div>
                             </div>

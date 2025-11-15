@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardLine, CardTitle } f
 import { Slider, SliderContent } from '@/components/ui/slider';
 import AppLayout from '@/layouts/app-layout';
 import { type BreadcrumbItem } from '@/types';
+import { Link } from '@inertiajs/react';
 
 {
     /* Breadcrumb */
@@ -48,23 +49,13 @@ export default function Welcome() {
                 {/** Use Slider Swiper */}
                 <Slider>
                     <SliderContent url={'/assets/imagem/galeria/img_centro_juventude_angelina_cj1_1.jpg'} title="" description="">
-                        <h1 className="text-xl font-bold md:text-2xl">🎉 Bingo Beneficente ASFAR</h1>
+                        <h1 className="text-xl font-bold md:text-2xl">🎯 Conheça nossas Unidades</h1>
                         <div className="py-2 md:py-4">
-                            <p>📅 04/10 • ⏰ 14h30</p>
-                            <p>📍 Salão do Rotary – Ferraz de Vasconcelos</p>
-                        </div>
-                        <div className="py-2 md:py-4">
-                            <p>🏆 Prêmios:</p>
-                            <ol className="mx-4 list-decimal">
-                                <li>Smart TV 43’’</li>
-                                <li>Air Fryer</li>
-                                <li>Surpresa</li>
-                                <li>Cafeteira</li>
-                            </ol>
+                            <p>✨ Cada unidade é um ponto de esperança, aprendizado e oportunidade.</p>
                         </div>
                         <div className="py-8">
-                            <a href="https://wa.me/551146767122" className="bg-amber-400 p-4 font-black">
-                                Participe e apoie nossa causa!
+                            <a href={'/Unidades'} className="bg-amber-400 p-4 font-black">
+                                Nossas unidades
                             </a>
                         </div>
                     </SliderContent>
